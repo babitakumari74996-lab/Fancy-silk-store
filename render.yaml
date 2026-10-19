@@ -1,0 +1,36 @@
+# Render blueprint — client: K2 Ladies Designer (root repo)
+# STATIC SITE — no backend service block. This repo is a static frontend only.
+# Do NOT copy this file into another client's repo — each client repo has its
+# own Render service.
+
+services:
+  - type: static_site
+    name: k2-ladies-designer-shop
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    publishPath: dist
+    branch: client/k2-ladies-designer
+    envVars:
+      # BUG 4.4: env var names are CASE-SENSITIVE on Render — keep these EXACTLY
+      # as written (same names in .env.example and the Render dashboard).
+      - key: VITE_SHOP_NAME
+        value: K2 Ladies Designer
+      - key: VITE_SHOP_TAGLINE
+        value: Bridal blouses, Aari & Maggam work, and made-to-measure occasion wear
+      - key: VITE_SHOP_FOUNDED_YEAR
+        value: "2010"
+      - key: VITE_SHOP_LOGO_PATH
+        value: /favicon.ico
+      - key: VITE_WHATSAPP_NUMBER
+        value: "919790094017"
+      - key: VITE_INSTAGRAM_HANDLE
+        value: ""
+      - key: VITE_CONTACT_EMAIL
+        value: support@k2ladiesdesigner.com
+      - key: VITE_WEBSITE_URL
+        value: https://k2ladiesdesigner.com
+      - key: VITE_GOOGLE_MAPS_URL
+        value: "https://www.google.com/maps/search/?api=1&query=K2+Ladies+Designer+86-2%2F476A+Venkatasamy+Road+Annapoorna+Layout+New+Siddhapudur+Coimbatore",
+      - key: VITE_GOOGLE_MAPS_EMBED_URL
+        value: ""
