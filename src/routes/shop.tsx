@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
-import { motion, AnimatePresence } from "motion/react";
+import { motion, AnimatePresence } from "framer-motion";
 import { SlidersHorizontal, X } from "lucide-react";
 import { z } from "zod";
 import { products, categories, formatPrice } from "@/lib/products";

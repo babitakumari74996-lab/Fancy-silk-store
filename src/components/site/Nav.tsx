@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "motion/react";
+import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
 import { useState } from "react";
 import { Search, ShoppingBag, Heart, User, Menu, X } from "lucide-react";
 import { useShop, cartCount } from "@/store/shop";

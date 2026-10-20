@@ -1,4 +1,4 @@
-import { AnimatePresence, motion } from "motion/react";
+import { AnimatePresence, motion } from "framer-motion";
 import { X, Search } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "@tanstack/react-router";

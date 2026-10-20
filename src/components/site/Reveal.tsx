@@ -1,4 +1,4 @@
-import { motion, useInView } from "motion/react";
+import { motion, useInView } from "framer-motion";
 import { useRef, type ReactNode } from "react";
 import { usePrefersReducedMotion } from "@/hooks/use-reduced-motion";
 

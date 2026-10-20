@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Heart } from "lucide-react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { useShop } from "@/store/shop";
 import { formatPrice, type Product } from "@/lib/products";
 import { TiltCard } from "./Interactions";

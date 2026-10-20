@@ -1,5 +1,5 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
-import { motion, useScroll, useTransform, type TargetAndTransition } from "motion/react";
+import { motion, useScroll, useTransform, type TargetAndTransition } from "framer-motion";
 import { useEffect, useLayoutEffect, useRef } from "react";
 import { ArrowRight, Star, Quote } from "lucide-react";
 import { HeroVideo } from "@/components/site/HeroVideo";

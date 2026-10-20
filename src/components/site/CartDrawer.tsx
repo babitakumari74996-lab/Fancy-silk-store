@@ -1,4 +1,4 @@
-import { AnimatePresence, motion } from "motion/react";
+import { AnimatePresence, motion } from "framer-motion";
 import { Minus, Plus, X, Lock, Truck } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";

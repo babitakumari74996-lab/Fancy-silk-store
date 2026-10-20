@@ -14,7 +14,7 @@ import { Footer } from "@/components/site/Footer";
 import { CartDrawer } from "@/components/site/CartDrawer";
 import { Toaster } from "@/components/ui/sonner";
 import { usePrefersReducedMotion } from "@/hooks/use-reduced-motion";
-import { useSpring, motion, useScroll } from "motion/react";
+import { useSpring, motion, useScroll } from "framer-motion";
 import appCss from "@/styles.css?url";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { reportLovableError } from "@/lib/lovable-error-reporting";
