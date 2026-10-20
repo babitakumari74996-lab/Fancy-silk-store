@@ -14,16 +14,16 @@ const env = import.meta.env as Record<string, string | undefined>;
 
 export const shopConfig = {
   /** Display name - shown in nav logo, footer, page titles, JSON-LD. */
-  shopName: env["VITE_SHOP_NAME"]?.trim() || "Fancy Silk Store",
+  shopName: env["VITE_SHOP_NAME"]?.trim() || "Dayal's Silks & Sarees",
 
   /** Short brand line - used in hero subtitle and footer blurb. */
   tagline:
     env["VITE_SHOP_TAGLINE"]?.trim() ||
-    "Punjabi suits, bridal wear, lehengas, sharara sets and designer suits",
+    "Sarees, suits, ethnic wear and fabrics",
 
   tagline_footer:
     env["VITE_SHOP_TAGLINE"]?.trim() ||
-    "Fancy Silk Store is a premier fashion store in Nakodar, Punjab, specializing in Punjabi suits, bridal wear, lehengas, sharara sets and designer suits.",
+    "Dayal's Silks & Sarees is a premier ethnic wear store in Abids, Hyderabad, Telangana, specializing in sarees, suits, ethnic wear and fabrics.",
 
   /** Approximate starting year based on the store's published experience. */
   foundedYear: env["VITE_SHOP_FOUNDED_YEAR"] ?? "2010",
@@ -39,57 +39,57 @@ export const shopConfig = {
    * Official store contact.
    */
   whatsappNumber:
-    env["VITE_WHATSAPP_NUMBER"]?.trim() || "+91 86991 61743",
+    env["VITE_WHATSAPP_NUMBER"]?.trim() || "+91 91000 14211",
 
   /** Instagram handle (no "@" required in value, kept for display). */
-  instagramHandle: env["VITE_INSTAGRAM_HANDLE"] ?? "fancy_silk_store_nakodar",
+  instagramHandle: env["VITE_INSTAGRAM_HANDLE"] ?? "dayals_fashion",
 
   /** Public contact email - footer, account profile, JSON-LD. */
   contactEmail:
-    env["VITE_CONTACT_EMAIL"] ?? "Not found",
+    env["VITE_CONTACT_EMAIL"] ?? "hello@dayals.com",
 
   /** Deployed site URL - JSON-LD `sameAs` + OG URL. */
   websiteUrl:
-    env["VITE_WEBSITE_URL"] ?? "https://www.fancysilkstore.in/",
+    env["VITE_WEBSITE_URL"] ?? "https://www.dayalsilks.com/",
 
   /** Store location - footer "Visit the store" + JSON-LD. */
   address: {
     street:
       env["VITE_SHOP_STREET"] ??
-      "Malri Road, near Advance Scanning Centre, Amardas Colony",
+      "4/1/865, Moosa Building, Tilak Road",
     locality:
       env["VITE_SHOP_LOCALITY"] ??
-      "Nakodar",
-    city: env["VITE_SHOP_CITY"] ?? "Nakodar",
-    region: env["VITE_SHOP_REGION"] ?? "Punjab",
-    postalCode: env["VITE_SHOP_POSTAL"] ?? "144040",
+      "Abids",
+    city: env["VITE_SHOP_CITY"] ?? "Hyderabad",
+    region: env["VITE_SHOP_REGION"] ?? "Telangana",
+    postalCode: env["VITE_SHOP_POSTAL"] ?? "500001",
     country: "India",
   },
 
   /**
    * Google Maps listing link - used by the "Find us on Map" button.
    */
-  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Fancy+Silk+Store+Malri+Road+Nakodar+Punjab",
+  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Dayals+Silks+and+Sarees+Abids+Hyderabad",
 
   /** Google Maps embed (iframe) URL - leave "" until an embed link is provided. */
   googleMapsEmbedUrl: env["VITE_GOOGLE_MAPS_EMBED_URL"] ?? "",
 
   /** Display phone (spaces fine) + tel: href (digits only). */
-  phone: "+91 86991 61743",
-  phoneHref: "+918699161743",
+  phone: "+91 91000 14211",
+  phoneHref: "+919100014211",
 
   /** Opening hours line - footer + boutiques. */
   hours:
     env["VITE_SHOP_HOURS"] ?? "Monday - Saturday 10:00 AM - 8:00 PM",
 
   /** Geo coordinates for JSON-LD - from the provided Google Maps listing. */
-  lat: 31.1234,
-  lng: 75.4567,
+  lat: 17.3850,
+  lng: 78.4867,
 
   /** Hero headline - first line white, second line gold italic. */
   hero: {
-    part1: "Fancy Silk Store",
-    part2: "Premium Fashion",
+    part1: "Dayal's Silks & Sarees",
+    part2: "Premium Ethnic Wear",
   },
 
   /**
@@ -105,32 +105,32 @@ export const shopConfig = {
     /** Display name - shown in nav logo, footer, page titles, JSON-LD. */
     shopName:
       env["VITE_TODAY_FASHION_SHOP_NAME"] ??
-      "Fancy Silk Store",
+      "Dayal's Silks & Sarees",
 
     /** City - used in page titles and descriptions. */
     city:
       env["VITE_TODAY_FASHION_CITY"] ??
-      "Nakodar",
+      "Hyderabad",
 
     /** Street address - footer "Visit the store". */
     street:
       env["VITE_TODAY_FASHION_STREET"] ??
-      "Malri Road, near Advance Scanning Centre, Amardas Colony",
+      "4/1/865, Moosa Building, Tilak Road",
 
     /** Locality - used in full address. */
     locality:
       env["VITE_TODAY_FASHION_LOCALITY"] ??
-      "Nakodar",
+      "Abids",
 
     /** Region - used in full address. */
     region:
       env["VITE_TODAY_FASHION_REGION"] ??
-      "Punjab",
+      "Telangana",
 
     /** Postal code. */
     postalCode:
       env["VITE_TODAY_FASHION_POSTAL"] ??
-      "144040",
+      "500001",
 
     /** Country. */
     country: "India",
@@ -138,22 +138,22 @@ export const shopConfig = {
     /** Google Maps URL. */
     googleMapsUrl:
       env["VITE_TODAY_FASHION_GOOGLE_MAPS_URL"] ??
-      "https://www.google.com/maps/search/?api=1&query=Fancy+Silk+Store+Malri+Road+Nakodar+Punjab",
+      "https://www.google.com/maps/search/?api=1&query=Dayals+Silks+and+Sarees+Abids+Hyderabad",
 
     /** Contact email. */
     contactEmail:
       env["VITE_TODAY_FASHION_CONTACT_EMAIL"] ??
-      "Not found",
+      "hello@dayals.com",
 
     /** Instagram handle. */
     instagramHandle:
       env["VITE_TODAY_FASHION_INSTAGRAM_HANDLE"] ??
-      "fancy_silk_store_nakodar",
+      "dayals_fashion",
 
     /** WhatsApp number. */
     whatsappNumber:
       env["VITE_TODAY_FASHION_WHATSAPP_NUMBER"] ??
-      "918699161743",
+      "919100014211",
 
     /** Opening hours. */
     hours:
@@ -163,12 +163,12 @@ export const shopConfig = {
     /** Latitude for JSON-LD. */
     lat: env["VITE_TODAY_FASHION_LAT"]
       ? parseFloat(env["VITE_TODAY_FASHION_LAT"])
-      : 31.1234,
+      : 17.3850,
 
     /** Longitude for JSON-LD. */
     lng: env["VITE_TODAY_FASHION_LNG"]
       ? parseFloat(env["VITE_TODAY_FASHION_LNG"])
-      : 75.4567,
+      : 78.4867,
   } as const,
 } as const;
 

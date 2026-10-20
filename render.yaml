@@ -1,11 +1,11 @@
-# Render blueprint - client: Fancy Silk Store
+# Render blueprint - client: Dayal's Silks & Sarees
 # STATIC SITE - no backend service block. This repo is a static frontend only.
 # Do NOT copy this file into another client's repo - each client repo has its
 # own Render service.
 
 services:
   - type: static_site
-    name: fancy-silk-store
+    name: dayals-silks-sarees
     runtime: node
     plan: free
     buildCommand: npm install && npm run build
@@ -15,48 +15,48 @@ services:
       # BUG 4.4: env var names are CASE-SENSITIVE on Render - keep these EXACTLY
       # as written (same names in .env.example and the Render dashboard).
       - key: VITE_SHOP_NAME
-        value: Fancy Silk Store
+        value: Dayal's Silks & Sarees
       - key: VITE_SHOP_TAGLINE
-        value: Punjabi suits, bridal wear, lehengas, sharara sets and designer suits
+        value: Sarees, suits, ethnic wear and fabrics
       - key: VITE_SHOP_FOUNDED_YEAR
         value: "2010"
       - key: VITE_SHOP_LOGO_PATH
         value: /favicon.ico
       - key: VITE_WHATSAPP_NUMBER
-        value: "918699161743"
+        value: "919100014211"
       - key: VITE_INSTAGRAM_HANDLE
-        value: "fancy_silk_store_nakodar"
+        value: "dayals_fashion"
       - key: VITE_CONTACT_EMAIL
-        value: "Not found"
+        value: hello@dayals.com
       - key: VITE_WEBSITE_URL
-        value: https://www.fancysilkstore.in/
+        value: https://www.dayalsilks.com/
       - key: VITE_GOOGLE_MAPS_URL
-        value: "https://www.google.com/maps/search/?api=1&query=Fancy+Silk+Store+Malri+Road+Nakodar+Punjab"
+        value: "https://www.google.com/maps/search/?api=1&query=Dayals+Silks+and+Sarees+Abids+Hyderabad"
       - key: VITE_GOOGLE_MAPS_EMBED_URL
         value: ""
       - key: VITE_SHOP_FOUNDED_YEAR
         value: "2010"
       - key: VITE_SHOP_STREET
-        value: "Malri Road, near Advance Scanning Centre, Amardas Colony"
+        value: "4/1/865, Moosa Building, Tilak Road"
       - key: VITE_SHOP_LOCALITY
-        value: "Nakodar"
+        value: "Abids"
       - key: VITE_SHOP_CITY
-        value: "Nakodar"
+        value: "Hyderabad"
       - key: VITE_SHOP_REGION
-        value: "Punjab"
+        value: "Telangana"
       - key: VITE_SHOP_POSTAL
-        value: "144040"
+        value: "500001"
       - key: VITE_SHOP_HOURS
         value: "Monday - Saturday 10:00 AM - 8:00 PM"
       - key: VITE_WHATSAPP_NUMBER
-        value: "918699161743"
+        value: "919100014211"
       - key: VITE_INSTAGRAM_HANDLE
-        value: "fancy_silk_store_nakodar"
+        value: "dayals_fashion"
       - key: VITE_CONTACT_EMAIL
-        value: "Not found"
+        value: "hello@dayals.com"
       - key: VITE_WEBSITE_URL
-        value: https://www.fancysilkstore.in/
+        value: "https://www.dayalsilks.com/"
       - key: VITE_GOOGLE_MAPS_URL
-        value: "https://www.google.com/maps/search/?api=1&query=Fancy+Silk+Store+Malri+Road+Nakodar+Punjab"
+        value: "https://www.google.com/maps/search/?api=1&query=Dayals+Silks+and+Sarees+Abids+Hyderabad"
       - key: VITE_GOOGLE_MAPS_EMBED_URL
         value: ""
